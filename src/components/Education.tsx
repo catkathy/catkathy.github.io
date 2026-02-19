@@ -58,10 +58,7 @@ export default function Education() {
                     {item.period}
                   </span>
                 </div>
-                <p className="text-xs text-indigo-600 mb-2">{item.school}</p>
-                <p className="text-xs text-slate-500 leading-relaxed">
-                  {item.description}
-                </p>
+                <p className="text-xs text-indigo-600">{item.school}</p>
               </div>
             </motion.div>
           ))}
