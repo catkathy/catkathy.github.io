@@ -4,26 +4,26 @@ import { Github, ExternalLink } from 'lucide-react'
 
 const projects = [
   {
-    title: 'AI Chat Assistant',
+    title: 'Intelligent OnCall Agent',
     description:
-      'A full-stack RAG-based chat application powered by OpenAI and LangChain. Supports multi-turn conversations with document context retrieval.',
-    tags: ['Python', 'FastAPI', 'LangChain', 'React', 'PostgreSQL'],
+      'Enterprise-level AI operations assistant integrating knowledge base, conversational, and ops agents for automated alarm handling and root cause analysis. Built with RAG, ReAct patterns, and SSE streaming.',
+    tags: ['Python', 'FastAPI', 'LangChain', 'LangGraph', 'Milvus', 'RAG'],
     github: 'https://github.com/catkathy',
     demo: '#',
   },
   {
-    title: 'DevFlow API',
+    title: 'AI Quantitative Trading Bot',
     description:
-      'A scalable REST API for project management with real-time collaboration features, JWT auth, and comprehensive test coverage.',
-    tags: ['Node.js', 'TypeScript', 'MongoDB', 'Docker', 'Redis'],
+      'Automated trading system combining machine learning signal generation with real-time market data ingestion. Features backtesting framework, risk management rules, and strategy performance analytics.',
+    tags: ['Python', 'PyTorch', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
     github: 'https://github.com/catkathy',
     demo: '#',
   },
   {
-    title: 'SmartAnalytics Dashboard',
+    title: 'AI Resume Screener',
     description:
-      'Data visualization dashboard with ML-powered anomaly detection, interactive charts, and automated reporting.',
-    tags: ['React', 'Python', 'PyTorch', 'AWS', 'SQL'],
+      'Intelligent recruitment tool that parses resumes and job descriptions with LLM-powered semantic matching. Ranks candidates by fit score, extracts key skills, and generates structured interview question sets.',
+    tags: ['Python', 'LangChain', 'OpenAI API', 'React', 'MongoDB'],
     github: 'https://github.com/catkathy',
     demo: '#',
   },

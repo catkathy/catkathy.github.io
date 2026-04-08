@@ -6,9 +6,9 @@ const GOOGLE_SCHOLAR_URL =
   'https://scholar.google.com/citations?user=YOLQS00AAAAJ&hl=en'
 
 const stats = [
-  { icon: Code2, label: 'Projects Built', value: '20+' },
+  { icon: Code2, label: 'Projects Built', value: '10+' },
   { icon: Globe, label: 'Years Experience', value: '3+' },
-  { icon: Cpu, label: 'AI Apps Shipped', value: '5+' },
+  { icon: Cpu, label: 'AI Apps Shipped', value: '3+' },
 ]
 
 const socialLinks = [

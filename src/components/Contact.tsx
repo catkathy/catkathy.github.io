@@ -13,7 +13,7 @@ const links = [
     icon: Linkedin,
     label: "LinkedIn",
     handle: "Kathy Zhang",
-    href: "#",
+    href: "https://www.linkedin.com/in/kathy-zhang-01/",
   },
   {
     icon: Mail,

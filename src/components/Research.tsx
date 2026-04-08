@@ -2,29 +2,19 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { ExternalLink, FlaskConical } from 'lucide-react'
 
-// Replace with your real Google Scholar profile URL
-const GOOGLE_SCHOLAR_URL = 'https://scholar.google.com/citations?user=YOUR_ID'
+const GOOGLE_SCHOLAR_URL = 'https://scholar.google.com/citations?user=YOLQS00AAAAJ&hl=en'
 
 const papers = [
   {
-    title: 'Your Paper Title Here',
-    venue: 'Conference / Journal Name',
-    year: '2024',
-    authors: 'Kathy Zhang, Co-author A, Co-author B',
-    abstract:
-      'A brief description of the paper and its contributions. Replace this placeholder with your actual abstract or key finding.',
-    tags: ['Machine Learning', 'NLP', 'AI'],
-    link: '#',
-  },
-  {
-    title: 'Another Research Project',
-    venue: 'Workshop / Preprint',
+    title: 'Towards Adaptive Zero Trust Model for Secure AI',
+    venue: '2023 IEEE Conference on Communications and Network Security (CNS)',
     year: '2023',
-    authors: 'Kathy Zhang, Advisor Name',
+    authors: 'Kexin Zhang, Shengjie Xu, Bongsik Shin',
     abstract:
-      'Description of this research project. This is a placeholder — fill in with your actual work and results.',
-    tags: ['Data Analysis', 'Human-Computer Interaction'],
-    link: '#',
+      'The attack surface of AI is expanding and posing numerous security threats. Threat actors have created new and unknown vulnerabilities against intelligent information systems and critical infrastructure. Secure and adaptive countermeasures are needed when detecting threats and mitigating risks. Zero Trust Model is a cybersecurity paradigm that assumes no user or system should be inherently trusted. It applies the security principle of Least Privilege to network access and Continuous Verification to monitoring and auditing. In this paper, we study the landscape of Secure AI and envision applying the Zero Trust Model to defend against AI threats.',
+    tags: ['Zero Trust', 'Secure AI', 'Cybersecurity', 'IEEE'],
+    link: 'https://ieeexplore.ieee.org/document/10288892',
+    citations: 14,
   },
 ]
 
@@ -77,15 +67,20 @@ export default function Research() {
                   </p>
                   <p className="text-xs text-slate-400 mb-3 italic">{paper.authors}</p>
                   <p className="text-xs text-slate-500 leading-relaxed mb-3">{paper.abstract}</p>
-                  <div className="flex flex-wrap gap-1">
+                  <div className="flex flex-wrap gap-1 items-center">
                     {paper.tags.map((tag) => (
                       <span key={tag} className="px-2 py-0.5 rounded text-xs bg-stone-100 text-slate-500">
                         {tag}
                       </span>
                     ))}
+                    {'citations' in paper && (
+                      <span className="px-2 py-0.5 rounded text-xs bg-indigo-50 text-indigo-500 font-medium">
+                        Cited by {paper.citations}
+                      </span>
+                    )}
                   </div>
                 </div>
-                {paper.link !== '#' && (
+                {paper.link && paper.link !== '#' && (
                   <a
                     href={paper.link}
                     target="_blank"
